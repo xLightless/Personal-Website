@@ -1,0 +1,105 @@
+/* make sure to get delivery and place it on the floor in the kitchen on the carpet */
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Mochiy+Pop+P+One&display=swap');
+
+:root {
+    --text-primary: 'Heebo', sans-serif;
+    --title-primary: 'Mochiy Pop P One', sans-serif;
+    --bg-primary: linear-gradient(to right, #100000,#300000,#200000);
+    font-size: 16px;
+    font-family: var(--text-primary);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #121212;
+}
+
+/* manages the scroll bar */
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+/* body::-webkit-scrollbar-track {
+    background: blue;
+} */
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #c2c9d2;
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+.navbar {
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: #0A0A0A;   
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100%; */
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-item:last-child {
+    margin-top: auto;
+    /* background-color: black; */
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nav-link svg {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.navbar:hover {
+    width: 16rem;
+}
+
+.navbar:hover .link-text {
+    display:block;
+}
+
+.header .name{
+    /* background-color: black; */
+    color: #EEF7FC;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.main-item {
+    color: white;
+}
